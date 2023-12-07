@@ -1,7 +1,7 @@
 import {
-  Hero,
   CustomerReviews,
   Footer,
+  Hero,
   PopularProducts,
   Services,
   SpecialOffer,
@@ -9,7 +9,7 @@ import {
   SuperQuality,
 } from "./sections";
 
-import Nav from "./components/Nav";
+import { Nav } from "./components";
 
 const App = () => {
   return (
