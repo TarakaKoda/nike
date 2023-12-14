@@ -1,5 +1,5 @@
-import { offer } from "../assets/images";
-import { Button } from "../components";
+import { offer } from "../../assets/images";
+import { Button } from "../../components";
 
 const SpecialOffer = () => {
   return (

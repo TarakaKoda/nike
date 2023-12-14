@@ -21,6 +21,14 @@
   .input {
     @apply border pl-5 text-base leading-normal text-slate-gray outline-none max-sm:w-full max-sm:rounded-full max-sm:border-slate-gray max-sm:p-5 sm:flex-1 sm:border-none;
   }
+
+  .blend-difference {
+   @apply mix-blend-mode: difference;
+  }
+
+  .overflow-hidden::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @layer utilities {
@@ -55,4 +63,7 @@
   .info-text {
     @apply font-montserrat text-lg leading-7 text-slate-gray;
   }
+
+
 }
+
