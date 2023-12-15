@@ -1465,11 +1465,11 @@ const topsAndTShirts = [
       },
     ],
     id: "tops&tShirts28",
-    images: {
+    images:{
       portraitURL:
-        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/01a5b376-1253-4861-b977-8c7ecc6de3ee/sportswear-tank-top-S5P72d.png",
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4ac1a40c-699b-4239-868a-e8bafefc9c64/los-angeles-lakers-2023-24-city-edition-nba-courtside-max90-t-shirt-JKWfsK.png",
       squarishURL:
-        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/01a5b376-1253-4861-b977-8c7ecc6de3ee/sportswear-tank-top-S5P72d.png",
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4ac1a40c-699b-4239-868a-e8bafefc9c64/los-angeles-lakers-2023-24-city-edition-nba-courtside-max90-t-shirt-JKWfsK.png",
     },
     isBestSeller: false,
     label: "IN_STOCK",
@@ -1511,9 +1511,9 @@ const topsAndTShirts = [
     id: "tops&tShirts29",
     images: {
       portraitURL:
-        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4ac1a40c-699b-4239-868a-e8bafefc9c64/los-angeles-lakers-2023-24-city-edition-nba-courtside-max90-t-shirt-JKWfsK.png",
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/192317a5-e861-4182-b43e-2b5ffb78e02e/chelsea-fc-2023-24-stadium-third-dri-fit-football-shirt-TlBMlv.png",
       squarishURL:
-        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4ac1a40c-699b-4239-868a-e8bafefc9c64/los-angeles-lakers-2023-24-city-edition-nba-courtside-max90-t-shirt-JKWfsK.png",
+        "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/192317a5-e861-4182-b43e-2b5ffb78e02e/chelsea-fc-2023-24-stadium-third-dri-fit-football-shirt-TlBMlv.png",
     },
     isBestSeller: false,
     label: "IN_STOCK",

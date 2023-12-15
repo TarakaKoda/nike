@@ -25,7 +25,7 @@ const ColorWays = ({
   }
 
   return (
-    <section className="mt-3 grid grid-cols-8 items-center justify-center max-sm:grid-cols-5">
+    <section className="mt-3 grid grid-cols-5 content-start items-center justify-center max-sm:grid-cols-5 md:grid-cols-4 xl:grid-cols-5">
       {differentColor.map((colorWays) => (
         <div
           key={colorWays.cloudProductId}

@@ -19,7 +19,7 @@ const CategoriesHeading = ({
   hideFilters,
 }: Props) => {
   return (
-    <div className="max-container top-0 z-10 -mt-[7vw] flex w-[92vw] justify-between bg-white max-xl:sticky max-xl:m-0 max-xl:ml-14 max-xl:mt-14 max-md:ml-6 xl:sticky">
+    <div className="max-container top-0 z-10 -mt-[7vw] flex w-[92vw] justify-between bg-white max-xl:sticky max-xl:m-0 max-xl:ml-14 max-md:ml-6 xl:sticky">
       <div className="">
         <div className="flex gap-1 font-Helvetica text-sm font-medium  text-gray-950">
           <p
@@ -40,7 +40,7 @@ const CategoriesHeading = ({
         </h2>
       </div>
       <div
-        className="mb-2 mr-5 flex w-60 cursor-pointer items-end justify-end max-xl:hidden"
+        className="mb-2 mr-5 flex w-60 cursor-pointer items-end justify-end max-md:hidden"
         onClick={() => console.log(handleFiltersDisplay(!hideFilters))}
       >
         <p className="text-md b mx-2 font-Helvetica font-medium ">

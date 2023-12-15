@@ -24,8 +24,15 @@ const StoreProductCard = ({
   return (
     <div
       className="my-8 cursor-pointer overflow-hidden  max-sm:min-h-[350px]  max-sm:flex-1"
-      onMouseEnter={() => setIsHover(false)}
-      onMouseLeave={() => setIsHover(true)}
+      onMouseEnter={() => {
+        if (colorways.length <= 1) {
+          return setIsHover(true);
+        }
+        setIsHover(false);
+      }}
+      onMouseLeave={() => {
+        setIsHover(true);
+      }}
     >
       <div className="flex items-center justify-center rounded-xl">
         <img
@@ -68,7 +75,7 @@ const StoreProductCard = ({
           {specialLabel && specialLabel}
         </p>
       )}
-      <h3 className=" font-Helvetica mt-1 text-md font-semibold leading-normal text-slate-950 text-opacity-80">
+      <h3 className=" text-md mt-1 font-Helvetica font-semibold leading-normal text-slate-950 text-opacity-80">
         MRP: &#8377; {price.currentPrice}.00
       </h3>
     </div>

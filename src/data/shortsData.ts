@@ -228,7 +228,7 @@ const shorts = [
 
     productType: "Shorts",
     subtitle: "Men's 23cm (approx.) Woven Training Shorts",
-    title: "Nike Dir-FIT",
+    title: "Nike Dri-FIT",
     specialLabel: "Sustainable Materials",
   },
   {

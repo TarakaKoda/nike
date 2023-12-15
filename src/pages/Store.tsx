@@ -22,9 +22,9 @@ const Store = () => {
           setHideFilters(hideFilters);
         }}
       />
-      <div className="padding relative flex justify-center max-xl:flex-col">
+      <div className="padding relative flex justify-center items-start max-xl:pt-0 max-md:flex-col">
         {hideFilters && (
-          <aside className="sticky -top-0 max-xl:top-20 max-xl:-ml-2 max-xl:-mt-10 ">
+          <aside className="sticky md:top-14  xl:top-7 max-md:top-20 max-md:-ml-2 max-md:-mt-10 ">
             <SideBar
               selectProduct={(selectedProduct: Product[]) => {
                 // Check if selectedProduct is a valid category before updating state
