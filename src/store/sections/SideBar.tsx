@@ -1,6 +1,6 @@
-import CategoriesList from "../../components/CategoriesList";
-import { categories } from "../../constants/";
-import { Product } from "../../data/interfaces";
+import { CategoriesList } from "../components";
+import { categories } from "../constants";
+import { Product } from "../data/interfaces/index";
 
 interface Props {
   selectProduct: (selectedProducts: Product[]) => void;

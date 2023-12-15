@@ -1,4 +1,4 @@
-import {allProducts} from "../data";
+import { allProducts } from "../data";
 import { Product } from "../data/interfaces";
 
 interface Props {
@@ -36,7 +36,9 @@ const CategoriesHeading = ({
         <h2 className="p-0 py-3 font-Helvetica  text-xl font-bold max-xl:m-1 xl:m-0">
           {" "}
           {selectedCategory ? selectedCategory : "All Products"}
-        <p className="font-Helvetica font-normal text-sm text-slate-gray">Items {numberOfProducts}</p>
+          <p className="font-Helvetica text-sm font-normal text-slate-gray">
+            Items {numberOfProducts}
+          </p>
         </h2>
       </div>
       <div

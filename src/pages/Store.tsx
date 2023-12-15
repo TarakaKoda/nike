@@ -1,9 +1,8 @@
 import { useState } from "react";
-import CategoriesHeading from "../components/CategoriesHeading";
-import { allProducts } from "../data";
-import { Product } from "../data/interfaces";
-import Products from "../sections/store/Products";
-import SideBar from "../sections/store/SideBar";
+import { CategoriesHeading } from "../store/components";
+import { allProducts } from "../store/data";
+import { Product } from "../store/data/interfaces";
+import { SideBar, Products } from "../store/sections";
 
 const Store = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -11,7 +10,7 @@ const Store = () => {
   const [products, setProducts] = useState<Product[]>([...allProducts]);
 
   return (
-    <section>
+    <section className="selection:bg-slate-900 selection:text-white">
       <CategoriesHeading
         setSelectedCategory={setSelectedCategory}
         handleAllProducts={setProducts}
@@ -22,9 +21,9 @@ const Store = () => {
           setHideFilters(hideFilters);
         }}
       />
-      <div className="padding relative flex justify-center items-start max-xl:pt-0 max-md:flex-col">
+      <div className="padding relative flex items-start justify-center max-xl:pt-0 max-md:flex-col">
         {hideFilters && (
-          <aside className="sticky md:top-14  xl:top-7 max-md:top-20 max-md:-ml-2 max-md:-mt-10 ">
+          <aside className="sticky max-md:top-20  max-md:-ml-2 max-md:-mt-10 md:top-14 xl:top-7 ">
             <SideBar
               selectProduct={(selectedProduct: Product[]) => {
                 // Check if selectedProduct is a valid category before updating state
