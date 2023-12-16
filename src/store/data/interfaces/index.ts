@@ -93,3 +93,18 @@ export interface Category {
   id: number;
   categoryName: string;
 }
+
+export interface Gender {
+  id: number;
+  itemName: string;
+}
+
+export interface Filters<T> {
+  FiltersList: T[];
+  title: string;
+}
+
+export interface Kid {
+  id: number;
+  itemName: string;
+}

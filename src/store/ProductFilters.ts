@@ -27,6 +27,19 @@ class Products {
       return product.subtitle.toLowerCase().includes("kids");
     });
   };
+  boysProducts = () => {
+    return this.product.filter((product) => {
+      return (
+        product.subtitle.toLowerCase().includes("kids") &&
+        !product.subtitle.toLocaleLowerCase().includes("girls")
+      );
+    });
+  };
+  girlsProducts = () => {
+    return this.product.filter((product) => {
+      return product.subtitle.toLowerCase().includes("girls");
+    });
+  };
 }
 
 const getProducts = (product: Product[]) => {

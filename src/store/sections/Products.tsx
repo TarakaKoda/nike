@@ -9,7 +9,7 @@ interface Props {
 const Products = ({ product, setProductsNumber }: Props) => {
   setProductsNumber(product.length)
   return (
-    <section className="grid flex-1 gap-3 transition duration-150 ease-in-out max-lg:grid-cols-2 max-sm:w-full max-sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3">
+    <section className="grid flex-1 gap-3 transition duration-150 ease-in-out max-lg:grid-cols-2 max-sm:w-full max-sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-4">
       {product.map((product) => (
         <StoreProductCard key={product.id} product={product} />
       ))}

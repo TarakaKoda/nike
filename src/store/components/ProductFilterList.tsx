@@ -1,13 +1,18 @@
-import { genders } from "../constants";
 import { arrow, nike } from "../assets/icons";
 import { useState } from "react";
+import { Filters } from "../data/interfaces";
 
-interface Props {
+interface Props<T> {
+  filters: Filters<T>;
   handleItemClick: (genderName: string) => void;
-  checkedItems: string[]
+  checkedItems: string[];
 }
 
-const GenderFilterList = ({ handleItemClick, checkedItems }: Props) => {
+const ProductFilterList = <T extends { id: number; itemName: string }>({
+  handleItemClick,
+  checkedItems,
+  filters,
+}: Props<T>) => {
   const [isGenderOpen, setGenderOpen] = useState(true);
 
   return (
@@ -25,7 +30,7 @@ const GenderFilterList = ({ handleItemClick, checkedItems }: Props) => {
             !isGenderOpen && "pb-3"
           }`}
         >
-          {genders.title}
+          {filters.title}
         </p>
         <img
           className={`h-8 w-8 transition duration-300 ease-in-out ${
@@ -36,19 +41,19 @@ const GenderFilterList = ({ handleItemClick, checkedItems }: Props) => {
         />
       </div>
       <ul className="flex flex-col gap-2">
-        {genders.genderList.map((gender) => (
+        {filters.FiltersList.map((filter) => (
           <li
             className="text-md flex cursor-pointer gap-2 font-Helvetica font-medium"
-            key={gender.id}
-            onClick={() => handleItemClick(gender.genderName)}
+            key={filter.id}
+            onClick={() => handleItemClick(filter.itemName)}
           >
             {" "}
             <div className="flex h-5 w-5 items-center justify-center rounded-md border-2 border-gray-500">
-              {checkedItems.includes(gender.genderName) && (
+              {checkedItems.includes(filter.itemName) && (
                 <img className="h-5 w-5" src={nike} alt="nike" />
               )}
             </div>
-            <p>{gender.genderName}</p>
+            <p>{filter.itemName}</p>
           </li>
         ))}
       </ul>
@@ -56,4 +61,4 @@ const GenderFilterList = ({ handleItemClick, checkedItems }: Props) => {
   );
 };
 
-export default GenderFilterList;
+export default ProductFilterList;

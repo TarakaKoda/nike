@@ -10,12 +10,22 @@ export const categories = [
   { id: 9, categoryName: "Accessories & Equipment" },
 ];
 
-const genderList = [
-  { id: 1, genderName: "Men"},
-  { id: 2, genderName: "Women"},
+const FiltersList = [
+  { id: 1, itemName: "Men" },
+  { id: 2, itemName: "Women" },
 ];
 
 export const genders = {
-  genderList,
-  title: 'Gender'
+  FiltersList,
+  title: "Gender",
+};
+
+const KidsList = [
+  { id: 1, itemName: "Boy" },
+  { id: 2, itemName: "Girl" },
+];
+
+export const kids = {
+  FiltersList: KidsList,
+  title: 'Kids'
 }

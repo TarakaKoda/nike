@@ -17,6 +17,8 @@ const Store = () => {
   const mensProducts = productsGenderFilter.menProducts();
   const womenProducts = productsGenderFilter.womenProducts();
   const kidsProducts = productsGenderFilter.kidsProducts();
+  const boysProducts = productsGenderFilter.boysProducts();
+  const girlsProducts = productsGenderFilter.girlsProducts();
   const unFilteredProducts = productsGenderFilter.getAllProducts();
 
   const handleProductsGenderFilter = (genderName: string) => {
@@ -43,9 +45,9 @@ const Store = () => {
       />
       <div className="padding relative flex items-start justify-center max-xl:pt-0 max-md:flex-col">
         {hideFilters && (
-          <aside className="sticky max-md:top-20  max-md:-ml-2 max-md:-mt-10 md:top-14 xl:top-7 ">
+          <aside className="sticky max-md:top-20  max-md:-ml-2 max-md:-mt-10 md:top-14 md:-ml-4 md:p-2 xl:top-7 ">
             <SideBar
-            setCheckedItems={setCheckedItems}
+              setCheckedItems={setCheckedItems}
               checkedItems={checkedItems}
               handleProductsGenderFilter={handleProductsGenderFilter}
               selectProduct={(selectedProduct: Product[]) => {
@@ -66,9 +68,14 @@ const Store = () => {
                 ? womenProducts
                 : checkedItems.includes("Men")
                   ? mensProducts
-                  : checkedItems.includes("Kids")
-                    ? kidsProducts
-                    : unFilteredProducts
+                  : checkedItems.includes("Boy")
+                    ? boysProducts
+                    : checkedItems.includes("Girl")
+                      ? girlsProducts
+                      : checkedItems.includes("Boy") &&
+                          checkedItems.includes("Girl")
+                        ? [...boysProducts, ...girlsProducts]
+                        : unFilteredProducts
           }
         />
       </div>
