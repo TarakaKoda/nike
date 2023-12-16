@@ -4,6 +4,7 @@ import hoodiesAndSweatshirts from "./hoodiesAndSweatshirtsData";
 import trousersAndTights from "./trousersAndTightsData";
 import shorts from "./shortsData";
 import topsAndTShirts from "./topsAndTShirtsData";
+import tracksuits from "./tracksuits";
 
 const products = [
   ...shoes,
@@ -12,6 +13,7 @@ const products = [
   ...trousersAndTights,
   ...shorts,
   ...topsAndTShirts,
+  ...tracksuits
 ];
 
 export default products;

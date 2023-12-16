@@ -1,4 +1,4 @@
-import { allProducts } from "../data";
+import { useAllProducts } from "../hooks";
 import { Product } from "../data/interfaces";
 
 interface Props {
@@ -18,6 +18,7 @@ const CategoriesHeading = ({
   handleFiltersDisplay,
   hideFilters,
 }: Props) => {
+  const allProducts = useAllProducts();
   return (
     <div className="max-container top-0 z-10 -mt-[7vw] flex w-[92vw] justify-between bg-white max-xl:sticky max-xl:m-0 max-xl:ml-14 max-md:ml-6 xl:sticky">
       <div className="">

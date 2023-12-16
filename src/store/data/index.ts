@@ -5,3 +5,4 @@ export { default as hoodiesAndSweatshirts } from "./hoodiesAndSweatshirtsData";
 export { default as trousersAndTights } from "./trousersAndTightsData";
 export { default as shorts } from "./shortsData";
 export { default as topsAndTShirts } from "./topsAndTShirtsData"
+export { default as tracksuits } from "./tracksuits"
